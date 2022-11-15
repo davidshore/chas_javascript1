@@ -8,17 +8,38 @@
   }
 
   // Task 1: Invoke the printCurrentTime function inside a console.log():
-
+console.log(printCurrentTime);
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
-
+function myName () {
+  console.log('Fredrik Säfström');
+}
+myName()
+myName()
 
   // Task 3: Write a function called `printGreeting`. When invoked using the examples
   // below, it should print "Hello Bob" or "Hello Sue":
   //
   // printGreeting("Bob") // This should print "Hello Bob"
-  // printGreeting("Sue") // This should print "Hello Sue"
+  // printGreeting("Sue") // This should print "Hello Sue" 
 
+ /* function printGreeting () {
+    const Bob = 'Bob'
+    const Sue = 'Sue'
+  if (printGreeting == 'Bob') {
+    console.log("Hello Bob");
+  } else if (printGreeting == 'Sue') {
+    console.log("Hello Sue");
+  }
+}
+printGreeting('Bob')
+*/
+
+  function printGreeting(x) {
+    
+console.log(`Hello ${x}`);
+  }
+  printGreeting('Fredrik');
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
   // so that it can be stored in a variable. See the example below to see how it should work.
@@ -28,7 +49,10 @@
   //
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
-
+    function multiply(num, num2) {
+      console.log(num * num2);
+    }
+    multiply(2, 2);
 
   // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
   // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
@@ -37,7 +61,15 @@
   // if (warmEnough(15)) {
   //   console.log("Go for a run!")
   // }
-
+    function warmEnough(x) {
+    
+       if (x > 10) {
+        console.log("Go for a run!");
+      } else {
+        console.log("Cold weather, stay inside!");
+      }
+    }
+    warmEnough(11);
 
 </script>
 
