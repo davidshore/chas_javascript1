@@ -1,10 +1,11 @@
 <script>
     // Functions are a way to store a re-usable snippet of code in a block which can
     // be run later. For example, this function would print the current time when invoked:
-    const printCurrentTime = () => {
-        const currentTime = new Date();
+
+    function printCurrentTime() {
+        var currentTime = new Date();
         return currentTime.toLocaleTimeString();
-    };
+    }
 
     // Task 1: Invoke the printCurrentTime function inside a console.log():
 
@@ -12,9 +13,9 @@
 
     // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
 
-    const printName = () => {
+    function printName() {
         console.log("Robin");
-    };
+    }
 
     printName();
     printName();
@@ -25,9 +26,9 @@
     // printGreeting("Bob") // This should print "Hello Bob"
     // printGreeting("Sue") // This should print "Hello Sue"
 
-    const printGreeting = (name) => {
+    function printGreeting(name) {
         console.log("Hello " + name);
-    };
+    }
 
     printGreeting("Bob");
     printGreeting("Sue");
@@ -41,26 +42,27 @@
     // const second = multiply(100, 4)
     // console.log(second) // this should print "400"
 
-    const multiply = (a, b) => {
+    function multiply(a, b) {
         return a * b;
-    };
+    }
 
-    const first = multiply(2, 2);
+    var first = multiply(2, 2);
     console.log(first);
-    const second = multiply(100, 4);
+    var second = multiply(100, 4);
     console.log(second);
 
     // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
     // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
     // function. It should print "Go for a run!"
     //
-    const warmEnough = (temp) => {
+
+    function warmEnough(temp) {
         if (temp > 10) {
             return true;
         } else {
             return false;
         }
-    };
+    }
 
     if (warmEnough(15)) {
         console.log("Go for a run!");
