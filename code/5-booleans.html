@@ -27,6 +27,10 @@
     const currentTemperature = 15;
     const goneForARun = false;
 
+    if (currentTemperature > 10 && !goneForARun) {
+        console.log("Go for a run!");
+    }
+
     // Task 3: Using .length() to get the length of a string and the `name` variable below,
     //         write an "else if" statement which prints the following:
     //         * "You have a long name!" if the length of the name is greater than 10 characters long
@@ -35,6 +39,14 @@
     //
     // Documentation: https://www.w3schools.com/js/js_if_else.asp
     const name = "Mary";
+
+    if (name.length > 10) {
+        console.log("You have a long name!");
+    } else if (name.length < 5) {
+        console.log("You have a short name!");
+    } else {
+        console.log("You have a medium length name!");
+    }
 </script>
 
 <p>Open the console in the browser to see the output of this script.</p>
