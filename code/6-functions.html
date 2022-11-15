@@ -6,11 +6,20 @@
     const currentTime = new Date()
     return currentTime.toLocaleTimeString()
   }
-
+  
   // Task 1: Invoke the printCurrentTime function inside a console.log():
+  
+  console.log(printCurrentTime())
+  
 
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
+
+  function writeName() {
+    console.log("Hanna")
+     }
+     writeName()
+     writeName()
 
 
   // Task 3: Write a function called `printGreeting`. When invoked using the examples
@@ -18,6 +27,12 @@
   //
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
+
+function  printGreeting(name) {
+console.log(name)
+  }
+  printGreeting("Bob")
+  printGreeting("Sue")
 
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
@@ -29,6 +44,14 @@
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
 
+  function multiply(num1, num2) {
+    return num1 * num2
+  }
+
+  const third = multiply(4,4)
+  console.log(third)
+
+
 
   // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
   // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
@@ -38,6 +61,16 @@
   //   console.log("Go for a run!")
   // }
 
+currentTemp = 15
+  function warmEnough(currentTemp) { 
+    if (currentTemp > 10) {
+      return true }
+    else {
+      return false
+    }
+      
+    }
+warmEnough(9)
 
 </script>
 
