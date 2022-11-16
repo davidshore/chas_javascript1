@@ -17,13 +17,26 @@
   //         Write an if-statement which logs (console.log) "Get writing!" if the number is 0.
   const wordCount = 0
 
+  wordCount == 0 ? console.log("Get writing!") : undefined
+
+  // ^this is the same as the if statement below but with Conditional operator (if shorthand)
+
+  // if (wordCount == 0) {
+  //   console.log("Get writing")
+  // }
+
 
   // Task 2: Use the "and" logical operator (&&) to chain two assertions together. Below are two
   //         variables; one which stores the current temperature, and one which stores whether
   //         someone has gone for a run today. Write an if-statement which prints "Go for a run!"
   //         if the current temperature is greater than 10, and the goneForARun is false.
-  const currentTemperature = 15
-  const goneForARun = false
+  const currentTemperature = 15;
+  const couchPotato = true;
+
+  (currentTemperature > 10 && couchPotato) ? console.log("Go for a run!") : undefined
+
+  // Jag har fått info från vänner i branschen att man bör kolla efter true values och inte efter negativa true statements
+
 
 
   // Task 3: Using .length() to get the length of a string and the `name` variable below,
@@ -33,9 +46,18 @@
   //         * "You have a medium length name!" if neither of the other two assertions is true
   //
   // Documentation: https://www.w3schools.com/js/js_if_else.asp
+
   const name = "Mary"
 
-  
+
+  if (name.length > 10) {
+    console.log("You have a long name!")
+  } else if (name.length < 5) {
+    console.log("You have a short name!")
+  } else {
+    console.log("You have a medium length name!");
+  }
+
 
 </script>
 
