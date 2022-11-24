@@ -1,44 +1,108 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
 
-  // Functions are a way to store a re-usable snippet of code in a block which can
-  // be run later. For example, this function would print the current time when invoked:
-  const printCurrentTime = () => {
-    const currentTime = new Date()
-    return currentTime.toLocaleTimeString()
-  }
+    // Functions are a way to store a re-usable snippet of code in a block which can
+    // be run later. For example, this function would print the current time when invoked:
+    const printCurrentTime = () => {
+      const currentTime = new Date()
+      return currentTime.toLocaleTimeString()
+    }
+  
+    // Task 1: Invoke the printCurrentTime function inside a console.log():
+    //för att använda en funktion skriv funktionens namn och sedan ()
 
-  // Task 1: Invoke the printCurrentTime function inside a console.log():
+    //debugger;
 
+    console.log(printCurrentTime());
+  
+  
+    // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
 
-  // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
+    const printMyName = () => {
+      const myName = "farida";
+      console.log(myName);
 
-
-  // Task 3: Write a function called `printGreeting`. When invoked using the examples
-  // below, it should print "Hello Bob" or "Hello Sue":
-  //
-  // printGreeting("Bob") // This should print "Hello Bob"
-  // printGreeting("Sue") // This should print "Hello Sue"
-
-
-  // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
-  // so that it can be stored in a variable. See the example below to see how it should work.
-  //
-  // const first = multiply(2, 2)
-  // console.log(first) // this should print "4"
-  //
-  // const second = multiply(100, 4)
-  // console.log(second) // this should print "400"
-
-
-  // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
-  // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
-  // function. It should print "Go for a run!"
-  //
-  // if (warmEnough(15)) {
-  //   console.log("Go for a run!")
-  // }
+    }
+    printMyName()
+    printMyName()
+    
 
 
-</script>
+    // Task 3: Write a function called `printGreeting`. When invoked using the examples
+    // below, it should print "Hello Bob" or "Hello Sue":
+    const printGreeting = (myName) => {
+     //const greeting = ("Hello Bob" ,"Hello Sue")
+     console.log("Hello " + myName);
+     
 
-<p>Open the console in the browser to see the output of this script.</p>
+    } 
+
+    printGreeting("Bob");
+    printGreeting("sue");
+
+    //console.log("Bob");
+    //
+    // printGreeting("Bob") // This should print "Hello Bob"
+    // printGreeting("Sue") // This should print "Hello Sue"
+  
+  
+    // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
+    // so that it can be stored in a variable. See the example below to see how it should work.
+    //
+    const multiply = (num1, num2) => {
+      return num1 * num2;
+
+    }
+    const first = multiply(2, 2)
+    console.log(first) // this should print "4"
+
+
+    //
+    const second = multiply(100, 4)
+    console.log(second) // this should print "400"
+
+    const third = multiply(50, 10.5)
+    console.log(third)
+
+
+
+
+  
+  
+    // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
+    // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
+    // function. It should print "Go for a run!"
+
+    function warmEnough(temp) {
+      if(temp > 10){
+        return true
+      }else {
+        return false
+
+      }
+
+    }
+
+
+   if (warmEnough(15)) {
+   console.log("Go for a run!")
+
+   }else{
+    console.log("Stay home")
+   }
+  
+  
+  </script>
+  
+  <p>Open the console in the browser to see the output of this script.</p>
+  
+</body>
+</html>
