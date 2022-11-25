@@ -8,21 +8,56 @@
   }
 
   // Task 1: Invoke the printCurrentTime function inside a console.log():
-
+  console.log(printCurrentTime());
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
-
+    const NamePrint = ()=>{
+      return 'Muhammad'
+    }
+    console.log(NamePrint());
+    console.log(NamePrint());
+    
 
   // Task 3: Write a function called `printGreeting`. When invoked using the examples
   // below, it should print "Hello Bob" or "Hello Sue":
-  //
+
+  const printGreeting = (name) =>{
+    return 'Hello '+ name
+  }
+  console.log(printGreeting('Bob'));
+  console.log(printGreeting('Sue'));
+  
+  /* Or */
+  function PrintGreeting(name){
+    return 'Hello '+ name 
+  }
+  if (name = 'Bob'){
+    console.log(PrintGreeting(name));
+  }
+  if (name = 'Sue'){
+    console.log(PrintGreeting(name));
+  }
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
 
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
   // so that it can be stored in a variable. See the example below to see how it should work.
-  //
+  const multiply = (x, y) =>{
+    return x*y
+  }
+  console.log(multiply(5, 3));
+  /* Or */
+  let x = 7, y = 2;
+  console.log(multiply(x, y));
+
+  /* Or */
+  function  Multiplies (a,b){
+    return a*b
+  }
+  console.log(Multiplies (6,4));
+ 
+
   // const first = multiply(2, 2)
   // console.log(first) // this should print "4"
   //
@@ -37,6 +72,18 @@
   // if (warmEnough(15)) {
   //   console.log("Go for a run!")
   // }
+  const warmEnough = (currentTemperature) =>{
+    if (currentTemperature > 10){
+      currentTemperature = true
+      return "Go for a run!"
+    }
+    else{
+      currentTemperature = false
+      return false
+    }
+  }
+  console.log(warmEnough(15));
+ 
 
 
 </script>
