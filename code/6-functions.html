@@ -32,31 +32,30 @@ console.log(printName());
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
   // so that it can be stored in a variable. See the example below to see how it should work.
-  const multiply=(a,b) => {
-    console.log(a*b);
+  function multiply(a,b){
+    return a*b;
   }
-  console.log(multiply(3,4));
-  // const first = multiply(2, 2)
-  // console.log(first) // this should print "4"
-  //
-  // const second = multiply(100, 4)
-  // console.log(second) // this should print "400"
+  const first = multiply(2, 2)
+   console.log(first) // this should print "4"
+  
+   const second = multiply(100, 4)
+   console.log(second) // this should print "400"
 
 
   // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
   // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
   // function. It should print "Go for a run!"
-  let warmEnough = 8;
-  if(warmEnough == 8){
-    console.log("true");
+  function warmEnough(temp){
+  if(temp > 8){
+    return true;
   }
-  else if(warmEnough >10){
+  else{
+    return false;
+  }}
+  
+  if (warmEnough(15)) {
     console.log("Go for a run!")
   }
-  
-  // if (warmEnough(15)) {
-  //   console.log("Go for a run!")
-  // }
 
 
 </script>
