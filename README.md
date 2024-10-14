@@ -6,7 +6,7 @@ Todays assignment is a collection of small challenges designed to give you a cha
 
 In the `code` folder, you'll find a number of tasks in html files. Go through each file and follow the instructions. Links to documentation for specific tasks can be found in the comments in the task files.
 
-### Setup repo in Github 
+### Setup repo in Github
 
 1. Create a Github repo.
 2. Upload your files to Github:
@@ -29,7 +29,7 @@ Click the link in canvas and input the link to your repo repo.
 - [MDN - const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - [MDN - let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [MDN - if/else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-- [MDN - arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [MDN - functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
 ---
 
@@ -55,4 +55,3 @@ After completing this assignment, you should start feeling a little more comfort
 In a new file, try to write a solution to the "FizzBuzz" question below (which is sometimes used in interviews, so good to know):
 
 > Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
-
